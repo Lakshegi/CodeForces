@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define equal_bit(a, b) ~((a) - (b)) & 1
+#define equal_bit(a, b) (~((a) - (b)) & 1)
 
 void qsort(int *arr, int size) {
     int i = 0;
@@ -42,6 +42,8 @@ int main(void) {
             scanf("%d", &arr[j]);
             ++a[arr[j] & 1]; //a[0] == a, a[0] = b
         }
+
+        //todo: redo answer logic
         if (!equal_bit(a[0], a[1])) {
             puts("NO");
         } else if (!equal_bit(a[0], a[1])) {
