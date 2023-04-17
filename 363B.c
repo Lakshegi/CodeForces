@@ -1,3 +1,5 @@
+//https://codeforces.com/contest/363/problem/B
+
 #include <stdio.h>
 
 int main(void) {
@@ -17,7 +19,7 @@ int main(void) {
             f = i;
             sum = sum + arr[k + i - 1] - arr[i - 1];
         }
-        //sum = sum + arr[k + i - 1] - arr[i - 1];
+
     }
     printf("%d", f == 0 ? 1 : f);
 }
