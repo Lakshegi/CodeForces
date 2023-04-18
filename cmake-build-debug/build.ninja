@@ -106,6 +106,39 @@ build 1360C.exe: C_EXECUTABLE_LINKER__1360C_Debug CMakeFiles/1360C.dir/1360C.c.o
   TARGET_IMPLIB = lib1360C.dll.a
   TARGET_PDB = 1360C.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target 363B
+
+
+#############################################
+# Order-only phony target for 363B
+
+build cmake_object_order_depends_target_363B: phony || CMakeFiles/363B.dir
+
+build CMakeFiles/363B.dir/363B.c.obj: C_COMPILER__363B_Debug D$:/CPP_Projects/Codeforces/GitHub/363B.c || cmake_object_order_depends_target_363B
+  DEP_FILE = CMakeFiles\363B.dir\363B.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu11
+  OBJECT_DIR = CMakeFiles\363B.dir
+  OBJECT_FILE_DIR = CMakeFiles\363B.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 363B
+
+
+#############################################
+# Link the executable 363B.exe
+
+build 363B.exe: C_EXECUTABLE_LINKER__363B_Debug CMakeFiles/363B.dir/363B.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\363B.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 363B.exe
+  TARGET_IMPLIB = lib363B.dll.a
+  TARGET_PDB = 363B.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -136,6 +169,8 @@ build 1360C: phony 1360C.exe
 
 build 1363A: phony 1363A.exe
 
+build 363B: phony 363B.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -144,7 +179,7 @@ build 1363A: phony 1363A.exe
 #############################################
 # Folder: D:/CPP_Projects/Codeforces/GitHub/cmake-build-debug
 
-build all: phony 1363A.exe 1360C.exe
+build all: phony 1363A.exe 1360C.exe 363B.exe
 
 # =============================================================================
 # Built-in targets
