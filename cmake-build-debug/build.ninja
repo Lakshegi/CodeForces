@@ -139,6 +139,39 @@ build 363B.exe: C_EXECUTABLE_LINKER__363B_Debug CMakeFiles/363B.dir/363B.c.obj
   TARGET_IMPLIB = lib363B.dll.a
   TARGET_PDB = 363B.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target 467B
+
+
+#############################################
+# Order-only phony target for 467B
+
+build cmake_object_order_depends_target_467B: phony || CMakeFiles/467B.dir
+
+build CMakeFiles/467B.dir/467B.c.obj: C_COMPILER__467B_Debug D$:/CPP_Projects/Codeforces/GitHub/467B.c || cmake_object_order_depends_target_467B
+  DEP_FILE = CMakeFiles\467B.dir\467B.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu11
+  OBJECT_DIR = CMakeFiles\467B.dir
+  OBJECT_FILE_DIR = CMakeFiles\467B.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 467B
+
+
+#############################################
+# Link the executable 467B.exe
+
+build 467B.exe: C_EXECUTABLE_LINKER__467B_Debug CMakeFiles/467B.dir/467B.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\467B.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 467B.exe
+  TARGET_IMPLIB = lib467B.dll.a
+  TARGET_PDB = 467B.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -171,6 +204,8 @@ build 1363A: phony 1363A.exe
 
 build 363B: phony 363B.exe
 
+build 467B: phony 467B.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -179,7 +214,7 @@ build 363B: phony 363B.exe
 #############################################
 # Folder: D:/CPP_Projects/Codeforces/GitHub/cmake-build-debug
 
-build all: phony 1363A.exe 1360C.exe 363B.exe
+build all: phony 1363A.exe 1360C.exe 363B.exe 467B.exe
 
 # =============================================================================
 # Built-in targets
