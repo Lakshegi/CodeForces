@@ -9,17 +9,20 @@ int main(void) {
     for (int i = 0; i < n; ++i) {
         scanf("%d", &arr[i]);
     }
+
     int sum = 0;
     for (int i = 0; i < k; ++i) {
         sum += arr[i];
     }
-    int f = 0;
-    for (int i = 1; i < n - k; ++i) {
-        if (sum > (sum + arr[k + i - 1] - arr[i - 1])) {
-            f = i;
-            sum = sum + arr[k + i - 1] - arr[i - 1];
-        }
 
+    int x = sum, f = 0;
+
+    for (int i = 0; i < n - k; ++i) {
+        if (x > (x + arr[k + i] - arr[i])) {
+            f = i;
+            x = x + arr[k + i] - arr[i];
+        }
     }
-    printf("%d", f == 0 ? 1 : f);
+    printf("%d\n", f == 0 ? 1 : ++f);
+    //printf("%d", x);
 }
