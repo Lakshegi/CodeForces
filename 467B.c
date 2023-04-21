@@ -2,29 +2,30 @@
 
 #include <stdio.h>
 
+unsigned bit_count(unsigned a) {
+    unsigned k = 0;
+    while(a) {
+        k += a & 1;
+        a >>= 1;
+    }
+    return k;
+}
+
+int friend(unsigned a, unsigned b, unsigned k) {
+    return bit_count(a ^ b) <= k;
+}
+
 int main(void) {
-    int n, m, k;
-    scanf("%d%d%d", &n, &m, &k);
-    int arr[m + 1];
+    unsigned n, m, k;
+    scanf("%u%u%u", &n, &m, &k);
+    unsigned arr[m + 1];
     for (int i = 0; i < m + 1; ++i) {
-        scanf("%d", &arr[i]);
+        scanf("%u", &arr[i]);
     }
-    int tmp = arr[m];
-    int sum = 0;
-    int xx = 0;
-    int answer = 0;
-    for (int i = 0; i < m + 1; ++i) {
-        xx = tmp ^ arr[i];
-        while (xx) {
-            if (xx & 1) {
-                ++sum;
-            }
-            xx = xx > 1;
-        }
-        if (sum <= k) {
-            ++answer;
-        }
-        sum = 0;
+    int s = 0;
+    for(int i = 0; i < m; ++i) {
+        s += friend(arr[i], arr[m], k);
     }
-    printf("%d", answer);
+
+    printf("%d\n", s);
 }
