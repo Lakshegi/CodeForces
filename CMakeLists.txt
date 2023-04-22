@@ -5,3 +5,7 @@ set(CMAKE_C_STANDARD 11)
 
 add_executable(1363A 1363A.c)
 add_executable(1360C 1360C.c)
+add_executable(363B 363B.c)
+add_executable(467B 467B.c)
+add_executable(124A 124A.c)
+add_executable(1721B 1721B.c)

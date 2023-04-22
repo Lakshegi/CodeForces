@@ -1,4 +1,0 @@
-"C:\CLion 2022.2.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/CLion 2022.2.4/bin/ninja/win/x64/ninja.exe" -G Ninja -S D:\CPP_Projects\Codeforces\GitHub -B D:\CPP_Projects\Codeforces\GitHub\cmake-build-debug
--- Configuring done
--- Generating done
--- Build files have been written to: D:/CPP_Projects/Codeforces/GitHub/cmake-build-debug
