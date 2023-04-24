@@ -238,6 +238,39 @@ build 1721B.exe: C_EXECUTABLE_LINKER__1721B_Debug CMakeFiles/1721B.dir/1721B.c.o
   TARGET_IMPLIB = lib1721B.dll.a
   TARGET_PDB = 1721B.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target 1346A
+
+
+#############################################
+# Order-only phony target for 1346A
+
+build cmake_object_order_depends_target_1346A: phony || CMakeFiles/1346A.dir
+
+build CMakeFiles/1346A.dir/1346A.c.obj: C_COMPILER__1346A_Debug D$:/CPP_Projects/Codeforces/GitHub/1346A.c || cmake_object_order_depends_target_1346A
+  DEP_FILE = CMakeFiles\1346A.dir\1346A.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu11
+  OBJECT_DIR = CMakeFiles\1346A.dir
+  OBJECT_FILE_DIR = CMakeFiles\1346A.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 1346A
+
+
+#############################################
+# Link the executable 1346A.exe
+
+build 1346A.exe: C_EXECUTABLE_LINKER__1346A_Debug CMakeFiles/1346A.dir/1346A.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\1346A.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 1346A.exe
+  TARGET_IMPLIB = lib1346A.dll.a
+  TARGET_PDB = 1346A.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -266,6 +299,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build 124A: phony 124A.exe
 
+build 1346A: phony 1346A.exe
+
 build 1360C: phony 1360C.exe
 
 build 1363A: phony 1363A.exe
@@ -284,7 +319,7 @@ build 467B: phony 467B.exe
 #############################################
 # Folder: D:/CPP_Projects/Codeforces/GitHub/cmake-build-debug
 
-build all: phony 1363A.exe 1360C.exe 363B.exe 467B.exe 124A.exe 1721B.exe
+build all: phony 1363A.exe 1360C.exe 363B.exe 467B.exe 124A.exe 1721B.exe 1346A.exe
 
 # =============================================================================
 # Built-in targets
